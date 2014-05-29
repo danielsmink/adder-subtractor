@@ -1,1 +1,51 @@
-Hello world!
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Adder/Subtractor</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div>
+    <header>      
+      <h1>Adder/Subtractor</h1>
+    </header>
+    <div class="content">
+
+      <div class="calculate">
+        
+        <div class="xInput">
+          <label for="xInput">X=</label>
+          <input id="xInput" type="text" placeholder="Enter an Integer" onkeyup="xOut(this), calc()" >
+        </div>
+
+        <div class="yInput">
+          <label for="yInput">Y=</label>
+          <input id="yInput" type="text" placeholder="Enter an Integer" onkeyup="yOut(this), calc()" >
+        </div>
+
+        <h3>
+          <span id="xOutSpan">X</span> 
+          <span id="plusMinus"> + </span> 
+          <span id="yOutSpan">Y</span> 
+          <span id="is"> = </span>
+          <span id="result">Z</span>
+        </h3>
+
+        <h3>
+          <span id="xOutSpan2">X</span> 
+          <span id="plusMinus"> - </span> 
+          <span id="yOutSpan2">Y</span> 
+          <span id="is"> = </span>
+          <span id="result2">Z</span>
+        </h3>
+
+      </div>
+      <span id="msg"></span>
+    </div>
+
+    <footer></footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
