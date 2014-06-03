@@ -41,7 +41,7 @@ function validate(input, element){
     msg.innerHTML = "The value must be an integer.";
     result1.innerHTML = result2.innerHTML = 'Z';
   } else {
-    element1.className = '';
+    element1.className = element2.className = '';
     msg.innerHTML ='';
   }
 }
