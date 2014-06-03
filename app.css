@@ -25,6 +25,8 @@ header h1 {
   color: red;
   font-style: italic;
   padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .error {
