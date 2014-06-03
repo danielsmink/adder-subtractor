@@ -1,7 +1,7 @@
 var x = document.getElementById('xInput');
 var y = document.getElementById('yInput');
 var msg = document.getElementById('msg');
-var result = document.getElementById('result');
+var result1 = document.getElementById('result1');
 var result2 = document.getElementById('result2');
 
 function xOut(input){
@@ -28,7 +28,7 @@ function validate(input, element){
   if(input.length >= 0 && isNaN(input) || input % 1 !== 0) {  
     element.setAttribute("class", "error");
     msg.innerHTML = "The value must be an integer.";
-    result.innerHTML = result2.innerHTML = 'Z';
+    result1.innerHTML = result2.innerHTML = 'Z';
   } else {
     element.className = '';
     msg.innerHTML ='';
@@ -40,9 +40,9 @@ function calc(){
   var yInput = y.value;
 
   if(xInput && yInput){
-    result.innerHTML = parseInt(xInput) + parseInt(yInput);
+    result1.innerHTML = parseInt(xInput) + parseInt(yInput);
     result2.innerHTML = parseInt(xInput) - parseInt(yInput);
   } else {
-    result.innerHTML = result2.innerHTML = 'Z';
+    result1.innerHTML = result2.innerHTML = 'Z';
   }
 }
