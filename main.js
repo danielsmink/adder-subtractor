@@ -12,14 +12,7 @@ function xOut(input){
   if(xInput.length <= 0) {
     document.getElementById('xOutSpan').innerHTML = document.getElementById('xOutSpan2').innerHTML = 'X';
   }
-  if(xInput.length >= 0 && isNaN(xInput) || isNaN(y.value) || xInput % 1 !== 0 || y.value % 1 !== 0){
-    x.setAttribute("class", "error");
-    msg.innerHTML = "Must be integer";
-    answer.innerHTML = answer2.innerHTML = 'Z';
-  } else {
-    x.className = '';
-    msg.innerHTML ='';
-  }
+  validate(xInput, x);
 }
 
 function yOut(input){
@@ -29,12 +22,16 @@ function yOut(input){
   if(yInput.length <= 0) {
     document.getElementById('yOutSpan').innerHTML = document.getElementById('yOutSpan2').innerHTML = 'Y';
   }
-  if(yInput.length >= 0 && isNaN(yInput) || isNaN(x.value) || yInput % 1 !== 0 || x.value % 1 !== 0) {
-    y.setAttribute("class", "error");
-    msg.innerHTML = "Must be integer";
+  validate(yInput, y);
+}
+
+function validate(input, element){
+  if(input.length >= 0 && isNaN(input) || input % 1 !== 0) {  
+    element.setAttribute("class", "error");
+    msg.innerHTML = "The value must be an integer.";
     answer.innerHTML = answer2.innerHTML = 'Z';
   } else {
-    y.className = '';
+    element.className = '';
     msg.innerHTML ='';
   }
 }
