@@ -1,5 +1,10 @@
+body {
+  background: #000;
+}
+
 .content {
-  margin: 0 auto;
+  background: #FFF;
+  margin: 50px auto;
   width: 50%;
 }
 
