@@ -36,7 +36,7 @@ function validate(input, element){
     input2 = x.value;
   }
   
-  if(input.length >= 0 && isNaN(input) || input % 1 !== 0 || isNaN(input2) || input2 % 1 !== 0) {  
+  if(input1.length >= 0 && isNaN(input1) || input1 % 1 !== 0 || isNaN(input2) || input2 % 1 !== 0) {  
     element1.setAttribute("class", "error");
     msg.innerHTML = "The value must be an integer.";
     result1.innerHTML = result2.innerHTML = 'Z';
