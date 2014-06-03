@@ -19,10 +19,12 @@ header h1 {
 
 .calculate {
   padding: 10px;
+  text-align: center;
 }
 
 #msg {
   color: red;
+  display: block;
   font-style: italic;
   padding: 10px;
   text-align: center;
