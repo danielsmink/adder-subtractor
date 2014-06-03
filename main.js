@@ -25,12 +25,23 @@ function yOut(input){
 }
 
 function validate(input, element){
-  if(input.length >= 0 && isNaN(input) || input % 1 !== 0) {  
-    element.setAttribute("class", "error");
+  var element1 = element;
+  var input1 = input;
+  
+  if(element1.id == 'xInput') {
+    element2 = y;
+    input2 = y.value;
+  } else {
+    element2 = x;
+    input2 = x.value;
+  }
+  
+  if(input.length >= 0 && isNaN(input) || input % 1 !== 0 || isNaN(input2) || input2 % 1 !== 0) {  
+    element1.setAttribute("class", "error");
     msg.innerHTML = "The value must be an integer.";
     result1.innerHTML = result2.innerHTML = 'Z';
   } else {
-    element.className = '';
+    element1.className = '';
     msg.innerHTML ='';
   }
 }
