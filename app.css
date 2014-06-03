@@ -8,8 +8,22 @@ body {
   width: 50%;
 }
 
+header {
+  margin: 10px;
+}
 header h1 {
   text-align: center;
+}
+
+
+.calculate {
+  margin: 10px;
+}
+
+#msg {
+  color: red;
+  font-style: italic;
+  margin: 10px;
 }
 
 .error {
