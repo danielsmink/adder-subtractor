@@ -6,3 +6,8 @@
 header h1 {
   text-align: center;
 }
+
+.error {
+  border-color: red;
+  font-color: red;
+}
