@@ -30,7 +30,7 @@ function yOut(input){
 
 function validate(input, element){
   var element1 = element,
-      input1 = input
+      input1 = input,
       element2,
       input2;
   
