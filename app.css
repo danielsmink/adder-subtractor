@@ -9,5 +9,5 @@ header h1 {
 
 .error {
   border-color: red;
-  font-color: red;
+  color: red;
 }
